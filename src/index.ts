@@ -13,12 +13,15 @@ const schema = {
           "200": {
             "description": "OK",
             "content": {
-              "text/plain": {
+              "application/json": {
                 "schema": {
-                  "type": "string",
-                  "enum": [
-                    "Hello, World!"
-                  ]
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["message"]
                 }
               }
             }
@@ -37,7 +40,7 @@ const schema = {
 
 const app = new Hono()
 
-app.get('/hello', (c) => c.text('Hello, World!'))
+app.get('/hello', (c) => c.json({message: 'Hello, World!'}))
 app.get('/schema.json', (c) => c.json(schema))
 
 export default app
