@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Hello world - example api",
+    "version": "0.0.1"
+  },
+  "tags": [],
+  "paths": {
+    "/hello-world": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Hello world response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ 

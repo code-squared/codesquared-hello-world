@@ -1,3 +1,6 @@
-# Skmtc - hello world
+# OpenAPI to TypeScript generator tutorial
 
-[https://hello-world.skm.tc/hello](https://hello-world.skm.tc/hello)
+Create your first TypeScript generator with CodeSquared.
+
+[https://docs.codesquared.com/tutorials/hello-world](https://docs.codesquared.com/tutorials/hello-world)
+
