@@ -1,5 +1,5 @@
 {
-  "name": "@skmtc/intro-hello-world",
+  "name": "@skmtc/hello-world-fetch",
   "version": "0.0.1",
   "exports": "./mod.ts"
 }

@@ -1,7 +1,7 @@
 import { OperationInsertable } from './config.ts'
 import type { OperationInsertableArgs } from '@skmtc/core'
 
-export class FetchHelloWorld extends OperationInsertable {
+export class HelloWorldFetch extends OperationInsertable {
   constructor({ context, operation, settings }: OperationInsertableArgs) {
     super({ context, operation, settings })
   }

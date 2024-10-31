@@ -1,10 +1,10 @@
 {
   "imports": {
-    "@skmtc/intro-hello-world": "./intro-hello-world/mod.ts",
+    "@skmtc/hello-world-fetch": "./hello-world-fetch/mod.ts",
     "@skmtc/core": "jsr:@skmtc/core@0.0.458",
     "@std/path": "jsr:@std/path@1.0.6"
   },
   "workspace": [
-    "./intro-hello-world"
+    "./hello-world-fetch"
   ]
 }
