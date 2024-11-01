@@ -9,9 +9,7 @@ export class HelloWorldFetch extends OperationInsertable {
   override toString(): string {
     return `async () => {
       const response = await fetch('${this.operation.path}');
-
       const data = await response.json();
-
       return data
     }`
   }

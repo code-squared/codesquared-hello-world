@@ -1,15 +1,16 @@
-import { Identifier, toOperationInsertable } from '@skmtc/core'
 import { join } from '@std/path'
+import { Identifier, toOperationInsertable, camelCase } from '@skmtc/core'
 
 export const OperationInsertable = toOperationInsertable({
-  id: '@skmtc/hello-world-fetch',
+  id: '@skmtc/intro-hello-world',
 
-  toIdentifier() {
-    return Identifier.createVariable('HelloWorldFetch')
+  toIdentifier({ operation }) {
+    const name = `get${camelCase(operation.path, { upperFirst: true })}`
+
+    return Identifier.createVariable(name)
   },
 
-  toExportPath() {
-    return join('@', 'HelloWorldFetch.ts')
+  toExportPath(args) {
+    return join('@', `${this.toIdentifier(args)}.ts`)
   }
 })
-

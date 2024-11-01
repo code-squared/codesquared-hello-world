@@ -2,6 +2,7 @@
   "imports": {
     "@skmtc/hello-world-fetch": "./hello-world-fetch/mod.ts",
     "@skmtc/core": "jsr:@skmtc/core@0.0.458",
+    "@skmtc/server": "jsr:@skmtc/core@0.0.308",
     "@std/path": "jsr:@std/path@1.0.6"
   },
   "workspace": [

@@ -1,6 +1,2 @@
-.codesquared/.settings/client.json
-.codesquared/.settings/manifest.json
-.codesquared/.settings/extensions.json
 .DS_Store
-node_modules
 dist
